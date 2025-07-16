@@ -24,3 +24,7 @@ my_sql_api_project/
 │   └── kbo_stats.db           ← SQLite DB
 ├── .env                       ← API 키 등 민감정보
 ├── requirements.txt
+
+
+
+<img width="1952" height="877" alt="image" src="https://github.com/user-attachments/assets/4ca067d8-f561-43bf-98f6-de7de1573bf3" />
