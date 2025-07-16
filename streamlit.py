@@ -37,6 +37,10 @@ def switch_chat(chat_id):
 def add_fig(role, content, dir_):
     chat_id = st.session_state.current_chat
     st.session_state.chats[chat_id].append({"role":role, "content": content, "figure": dir_})
+    
+def send_question_to_queue(question):
+    add_message("user",f"{question}")
+    add_message("assistant", f"이것은 echo bot 입니다. {question}에 대한 답입니다.")
 
 user_id = "HKW"
 depart_info = "admin"
