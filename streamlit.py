@@ -1,10 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
-import time
 import random
 import uuid
-from streamlit_autorefresh import st_autorefresh
-import json, base64
 
 # 세션 상태 초기화
 if "chats" not in st.session_state:
@@ -84,7 +81,3 @@ for msg in st.session_state.chats[st.session_state.current_chat]:
         
         if msg.get("figure"):
             st.image(msg["figure"])
-        
-
-# 자동 새로고침 (60초마다)
-st_autorefresh(interval=30000, key="refresh")
